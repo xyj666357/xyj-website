@@ -1,0 +1,70 @@
+/*-- 淡绿色主题 --*/
+:root {
+  --bg-light-green: #e8f5e9;      /* 淡绿色背景 */
+  --text-dark: #2e3b2e;           /* 深绿色文字 */
+  --navbar-green: #2e7d32;         /* 导航栏深绿色 */
+  --card-green: #c8e6c9;           /* 卡片浅绿色 */
+  --border-green: #81c784;         /* 边框绿色 */
+}
+
+/*-- 全局样式 --*/
+body {
+  background-color: var(--bg-light-green);
+  color: var(--text-dark);
+  font-family: 'Segoe UI', 'Roboto', sans-serif;
+  line-height: 1.6;
+}
+
+/*-- 导航栏 --*/
+.navbar {
+  background-color: var(--navbar-green) !important;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.navbar-brand, .nav-link {
+  color: white !important;
+}
+
+.nav-link:hover {
+  background-color: #1b5e20;
+}
+
+/*-- 标题 --*/
+h1, h2, h3 {
+  color: #1b5e20;
+}
+
+h1 {
+  border-bottom: 2px solid var(--border-green);
+  padding-bottom: 0.5rem;
+}
+
+/*-- 卡片效果 --*/
+.main-content {
+  background-color: white;
+  border-radius: 8px;
+  padding: 2rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  margin: 1rem 0;
+}
+
+/*-- 表格 --*/
+table {
+  background-color: white;
+  border-collapse: collapse;
+  width: 100%;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+th {
+  background-color: var(--navbar-green);
+  color: white;
+  padding: 0.75rem;
+}
+
+td {
+  padding: 0.75rem;
+  border-bottom: 1px solid var(--border-green);
+}
